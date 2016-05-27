@@ -20,6 +20,8 @@ Once `node` is installed, you can use `npm` to install the `lacona-cli` package.
 $ npm install -g lacona-cli
 ```
 
+**Note: This tool is brand new, and not yet perfected. If you find bugs, please [report them](https://github.com/brandonhorst/lacona-cli/issues)**
+
 Lacona addons must be open source. You'll probably want to store your code
 on [Github](https://github.com). Go to Github and create a new repo, then
 clone it to your local system.

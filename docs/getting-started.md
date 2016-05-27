@@ -18,7 +18,7 @@ Once `node` is installed, you can use `npm` to install the `lacona-cli` package.
 
 ```sh
 $ npm install -g lacona-cli
-``1
+```
 
 Lacona addons must be open source. You'll probably want to store your code
 on [Github](https://github.com). Go to Github and create a new repo, then
@@ -171,7 +171,7 @@ change.
 
 ### Debugging
 
-As you are doing development errors happen. Sometimes, you just want to add
+As you are doing development, errors happen. Sometimes, you just want to add
 a few `console.log` statements for debugging purposes. Because these commands
 are run through Lacona, you will not see log statements printed directly
 to the console. In order to view logs, just run

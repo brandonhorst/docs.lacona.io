@@ -10,5 +10,6 @@
 * [User Preferences](docs/config.md)
 * [API](docs/api.md)
 * [Transpilation](docs/transpilation.md)
+* [Publishing](docs/publishing.md)
 * [Examples](docs/examples.md)
 

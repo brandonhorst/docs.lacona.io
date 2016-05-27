@@ -1,0 +1,14 @@
+{
+    "gitbook": "2.x.x",
+    "plugins": [
+        "edit-link",
+        "prism",
+        "-highlight"
+    ],
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/laconalabs/docs.lacona.io/tree/master",
+            "label": "Edit This Page"
+        }
+    }
+}

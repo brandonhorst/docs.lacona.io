@@ -12,8 +12,6 @@ commands, both built-in and custom. This creates an immensely powerful system.
 Commands are written in Javascript, and are deployed on `npm`. Try it
 for yourself!
 
-- [Getting Started](docs/getting-started.md)
-- [Commands](docs/commands.md)
-- [Extensions](docs/extensions.md)
-- [Grammars](docs/grammar.md)
-- [Config](docs/config.md)
+These docs are very new. For help, please
+[open Github issues](https://github.com/laconalabs/LaconaApp/issues) or
+[join the chat on Gitter](https://gitter.im/laconalabs/LaconaApp).

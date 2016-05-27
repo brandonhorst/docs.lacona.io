@@ -1,15 +1,14 @@
 # Getting Started
 
-## Preliminary Setup
-
 Developing Lacona commands requires some very basic knowledge of the command
 line, and some knowledge of Javascript. If you have questions that are not
 cleared up by this guide, please submit an issue.
 
 There is a simple command line utility that will help kickstart your
-Lacona addon development. To install it, you'll need node.js v4.0.0+ and npm.
-
+Lacona addon development. To use it, you'll need node.js v4.0.0+ and npm.
 You'll only have to do this once.
+
+If you don't already have node and npm installed.
 
 ```sh
 $ brew install node
@@ -191,6 +190,7 @@ logs that you don't understand - that's OK.
 
 You now have a Lacona addon up and running. You can modify the `describe` and
 `execute` methods to make it do anything you want. For more information,
-please see the [grammar](grammar.md) and [api](api.md) docs.
+you'll want to see the docs for [phrases](phrases.md),
+[grammar](grammar.md), and [api](api.md).
 
 Go build something awesome!

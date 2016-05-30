@@ -1,6 +1,6 @@
 # Lacona Addon Docs
 
-Lacona is built from the ground up to support custom Addons.
+[Lacona](http://www.lacona.io) is built from the ground up to support custom Addons.
 The addon API is very powerful - all of the built-in Lacona commands
 are constructed from the same tools. Custom Addons can make use of
 user configuration, access the internet and the file system, run

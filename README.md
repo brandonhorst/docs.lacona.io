@@ -1,4 +1,4 @@
-# Lacona Addon Documentation
+# Lacona Addon Docs
 
 Lacona is built from the ground up to support custom Addons.
 The addon API is very powerful - all of the built-in Lacona commands
@@ -15,3 +15,5 @@ for yourself!
 These docs are very new. For help, please
 [open Github issues](https://github.com/laconalabs/LaconaApp/issues) or
 [join the chat on Gitter](https://gitter.im/laconalabs/LaconaApp).
+
+**[View on Gitbook](http://docs.lacona.io)**

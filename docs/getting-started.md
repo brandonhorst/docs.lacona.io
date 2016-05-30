@@ -5,7 +5,7 @@ line, and some knowledge of Javascript. If you have questions that are not
 cleared up by this guide, please submit an issue.
 
 There is a simple command line utility that will help kickstart your
-Lacona addon development. To use it, you'll need node.js v4.0.0+ and npm.
+Lacona addon development. To use it, you'll need node.js v6.0.0+ and npm.
 You'll only have to do this once.
 
 If you don't already have node and npm installed.
@@ -14,6 +14,7 @@ If you don't already have node and npm installed.
 $ brew install node
 ```
 
+You could also use [nvm](https://github.com/creationix/nvm).
 Once `node` is installed, you can use `npm` to install the `lacona-cli` package.
 
 ```sh

@@ -8,18 +8,16 @@ the outside world is done through the `lacona-api` module.
 
 `lacona-api` provides the ability to **execute system commands**,
 **run spotlight queries**, **display notifications**, **open files**,
-**execute Applescript**, and much more.
+**execute Applescript**, **call out to Node.js**, and much more.
 
 The most useful functions are shown here. For the full list, see
 [lacona-api](https://github.com/laconalabs/lacona-api). To request
 additional features,
 [submit a Github issue](https://github.com/laconalabs/lacona-api/issues).
 
-Please note that support for network requests and file reading
-is not currently available, but is coming soon.
-If you want to implement such a command now, you will want
-to use `callSystem` to execute a Python/Ruby/perl/bash script. Node.js is not
-installed on OSX by default, and should not be relied upon.
+Please note that if you want to support network requests, file reading, etc,
+you need to use `callNode` or `callSystem`. There are no built-in API calls to
+handle hese functions.
 
 ## Useful Commands
 
@@ -59,6 +57,36 @@ callSystem({
 ```
 
 Runs a arbitrary system command. Calls `done` with the contents of `STDOUT`.
+
+### callNode (UNRELEASED)
+
+```js
+callNode({
+  func: Function,
+  args: Array<Any>
+}, done: Callback<Error?, Any, String>
+```
+
+Executes a function `func` in a [node.js](https://nodejs.org/en/) environment.
+This function **can** make use of the node standard library through
+`require`.
+
+This node executable is bundled with Lacona - it does not use the node installed
+on the user system, if one exists.
+
+`func` will be passed any arguments specified in `args`, followed by a
+`callback` function. That callback should be called `callback(err, result)`
+`result` is any JSON-serializable object.
+
+The `done` callback will be called with 3 arguments: an Error or null,
+the `result` object, and a newline-joined string of all `console.log` and
+`console.error` statements called.
+
+#### Limitations
+
+- As it is executing in an entirely different environment, the context of the passed osaFunction is completely ignored. It cannot behave like a closure or modify any external variables.
+- As JSON is used as the transport mechanism, only Objects, Arrays, Numbers, Strings, true, false, and null can be passed back and forth between the two environments. That is to say, you cannot return an complex object (Streams, Observables, Promises, EventEmitters, etc).
+- As each call spawns off a new process and spins up a new environment, there may be some delay.
 
 ### showNotification
 

@@ -58,7 +58,7 @@ callSystem({
 
 Runs a arbitrary system command. Calls `done` with the contents of `STDOUT`.
 
-### callNode (UNRELEASED)
+### callNode
 
 ```js
 callNode({

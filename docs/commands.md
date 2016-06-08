@@ -17,7 +17,7 @@ const MyCommand = {
 
   execute (result) {
     console.log(result)
-  }
+  },
   
   describe () {
     return <literal text='Hello, world!' value='hello' />

@@ -12,7 +12,7 @@
 * [Transpilation](docs/transpilation.md)
 * [Publishing](docs/publishing.md)
 * [Examples](docs/examples.md)
-* [Appendices]
+* [Appendices](docs/appendices/README.md)
   - [Atlas](docs/appendices/atlas.md)
   - [Contact](docs/appendices/contact.md)
 

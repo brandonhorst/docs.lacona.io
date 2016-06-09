@@ -167,6 +167,8 @@ Your addon should be usable immediately.
 Call up Lacona and type `test my new command`.
 You should see a new option, which would look like this:
 
+![Lacona screenshot showing "test my new command"](/img/test-my-new-command.png)
+
 If you select it, it should show an alert message.
 
 If you modify the new User Preferences item, you should see the Alert message

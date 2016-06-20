@@ -1,6 +1,6 @@
 # Extensions
 
-Commands are phrases that
+Extensions are phrases that
 
 1. extend something other than `lacona-phrases#Command`
 2. the phrase's results match the interface of the extended phrase

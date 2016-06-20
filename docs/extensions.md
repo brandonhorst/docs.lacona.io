@@ -37,7 +37,7 @@ results.
 
 `lacona-phrases#PreferencePane` for example, can not be represented by a simple
 string. Rather, its result should be an object with methods that do things.
-In the case of `PreferencePane`, there is one method called are `open`.
+In the case of `PreferencePane`, there is one method called `open`.
 If you are extending
 a phrase like this, one good way is to use a class definition, like so:
 

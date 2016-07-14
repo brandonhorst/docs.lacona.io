@@ -12,8 +12,7 @@ Lacona is a proprietary OSX Application developed by
 At the moment, Lacona Labs is an solo effort by Brandon Horst
 ([Twitter](https://twitter.com/brandonhorst),
 [GitHub](https://github.com/brandonhorst)). If you want to get involved
-more than you want to work a job that pays money,
-[contact me](docs/appendices/contact.md).
+more than you want to work a job that pays money, [contact me](contact.md).
 
 Lacona is composed of 7 major parts:
 
@@ -91,7 +90,7 @@ purposes (eg. [HealthReactor](http://healthreactor.io/)).
 Elliptical is a very flexible framework, and its functionality can be
 extended using `processors`. Lacona makes use of 4 of these processors:
 
-- [elliptical/observe](https://github.com/laconalabs/elliptical-observe),
+- [elliptical/observe-inline](https://github.com/laconalabs/elliptical-observe-inline),
   which provides Observable-based sideways data loading. This is how Lacona
   Sources are built.
 - [elliptical/extend](https://github.com/laconalabs/elliptical-extend),

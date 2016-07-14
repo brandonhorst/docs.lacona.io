@@ -103,4 +103,4 @@ fast and simple, for only a small bit of additional overhead.
 
 ## Examples
 
-Please see [examples](docs/examples.md).
+Please see [examples](../appendices/examples.md).

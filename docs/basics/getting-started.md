@@ -87,7 +87,7 @@ be scared.
 Preferences are presented to the user through the standard Lacona Preferences
 page, and exposed to the Javascript code as an object.
 
-Read more at [config](config.md).
+Read more at [config](../advanced/config.md).
 
 ### Transpilation
 
@@ -98,7 +98,7 @@ npm modules.
 
 You should always use transpilation unless you have a really good reason not to.
 
-Read more at [transpilation](transpilation.md).
+Read more at [transpilation](../advanced/transpilation.md).
 
 ### Initialization
 

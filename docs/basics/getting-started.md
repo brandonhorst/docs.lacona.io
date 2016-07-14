@@ -139,14 +139,13 @@ only used by Lacona, and it provides additional information about the addon.
   If you told `npm init` that you do not need user settings, this
   would only contain an empty object.
 - `src` contains the source files which you will be editing.
-  - `extensions.jsx` is the javascript code of your addon. It should export
-    an Array of Phrases called `default`.
+  - `index.jsx` is the javascript code of your addon. It should export
+    an Array of Phrases called `extensions`.
 
 Once you install your packages, two new directories will be automatically
 created. You won't need to worry about these, but just know that they exist.
 
-- `build` contains the transpiled and browserified files. It should not be
-  edited by hand.
+- `lib` contains the transpiled files. It should not be edited by hand.
 - `node_modules` contains the dependencies required to run and develop your
 addon. You should not need to modify this manually.
 
@@ -196,7 +195,6 @@ logs for the addon that you are developing.
 
 You now have a Lacona addon up and running. You can modify the `describe` and
 `execute` methods to make it do anything you want. For more information,
-you'll want to see the docs for [phrases](phrases.md),
-[grammar](grammar.md), and [api](api.md).
+you'll want to see the docs for [phrases](phrases.md).
 
 Go build something awesome!

@@ -1,5 +1,5 @@
 # Appendices
 
-- [Atlas](atlas.md)
-- [Contact](contact.md)
-
+* [Examples](examples.md)
+* [Atlas](atlas.md)
+* [Contact](contact.md)

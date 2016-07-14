@@ -21,15 +21,15 @@ Once `node` is installed, you can use `npm` to install the `lacona-cli` package.
 $ npm install -g lacona-cli
 ```
 
-**Note: This tool is brand new, and not yet perfected. If you find bugs, please [report them](https://github.com/brandonhorst/lacona-cli/issues)**
+**Note: This tool is brand new, and not yet perfected. If you find bugs, please[report them](https://github.com/brandonhorst/lacona-cli/issues)**
 
 Lacona addons must be open source. You'll probably want to store your code
 on [Github](https://github.com). Go to Github and create a new repo, then
 clone it to your local system.
 
 ```sh
-$ git clone https://github.com/brandonhorst/lacona-my-first-command.git
-$ cd lacona-my-first-command
+$ git clone <your new git repo url>
+$ cd <your new git repo name>
 ```
 
 If that all worked, you're ready to create your new Lacona addon!
@@ -54,9 +54,7 @@ Try to stick to lowercase characters, underscores, dashes, and dots.
 By convention, the package name should start with `lacona-`, though this is
 not enforced.
 
-`lacona init` will also prompt you for the URL of a Git repository and
-a license. Your addon will get rejected if your code is unlicensed or
-not publicly available.
+`lacona init` will also prompt you for the URL of a Git repository and a license.
 
 ### Commands vs Extensions
 
@@ -74,6 +72,9 @@ any command that uses the `URL` phrase can now accept "my homepage". You could
 then use "open my homepage" or "translate my homepage to Chinese".
 
 Read more at [commands](commands.md) and [extensions](extensions.md).
+
+Note that this question only generates some sample code to get you started.
+Addons can contain any number of commands, extensions, or both.
 
 ### User Preferences
 
@@ -188,8 +189,8 @@ $ lacona logs
 Our command has a `console.log` statement, so if you run `test my new command`
 and then `lacona logs`, you should the log printed to the console.
 
-This will show all Lacona-related logs from the system, so there may be
-logs that you don't understand - that's OK.
+Note that this command will show all Lacona-related logs, not only
+logs for the addon that you are developing.
 
 ### Go Forth
 

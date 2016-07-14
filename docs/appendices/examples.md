@@ -4,6 +4,7 @@ For basic examples, look at the code created by `lacona init`.
 
 For more complex examples, please check out Lacona's built-in commands:
 
+- [lacona-calculate](https://github.com/laconalabs/lacona-calculate)
 - [lacona-command](https://github.com/laconalabs/lacona-command)
 - [lacona-communicate](https://github.com/laconalabs/lacona-communicate)
 - [lacona-events](https://github.com/laconalabs/lacona-events)

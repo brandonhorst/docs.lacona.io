@@ -186,7 +186,7 @@ $ lacona logs
 ```
 
 Our command has a `console.log` statement, so if you run `test my new command`
-and then `lacona logs`, you should the log printed to the console.
+and then `lacona logs`, you should see the log printed to the console.
 
 Note that this command will show all Lacona-related logs, not only
 logs for the addon that you are developing.

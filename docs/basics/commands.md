@@ -29,4 +29,5 @@ export default [MyCommand]
 
 When the user calls up Lacona, "Hello, world!" will be presented as an option.
 If the user selects it and presses Return, `execute` will be called, with the
-grammar's result, printing `hello` to the console log.
+grammar's result, printing `hello` to the console log. This log can be viewed
+by running `lacona logs`.

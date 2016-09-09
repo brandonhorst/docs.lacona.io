@@ -16,7 +16,6 @@
   * [Previews](docs/advanced/preview.md)
   * [User Preferences](docs/advanced/config.md)
   * [Transpilation](docs/advanced/transpilation.md)
-  * [Design Rationale](docs/advanced/rationale.md)
 * [Distribution](docs/distribution/README.md)
   * [Metadata](docs/distribution/metadata.md)
   * [Publishing](docs/distribution/publishing.md)

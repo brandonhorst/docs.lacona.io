@@ -8,4 +8,3 @@
 * [Previews](preview.md)
 * [User Preferences](config.md)
 * [Transpilation](transpilation.md)
-* [Design Rationale](rationale.md)

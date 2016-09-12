@@ -1,6 +1,6 @@
 # Translation
 
-**This functionality is not currently available in Lacona 1.0.1. It will be made available in Lacona 1.1.0.**
+**This functionality is not currently available in Lacona 1.0.1. It will be made available in Lacona 1.0.2.**
 
 One of the complexities of natural language is that there are so many of them.
 Lacona was originally developed to use English, but it is designed to support all

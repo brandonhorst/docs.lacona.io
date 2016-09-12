@@ -1,5 +1,6 @@
 # Advanced Topics
 
+* [Translation](translation.md)
 * [Placeholders and Arguments](arguments.md)
 * [Qualifiers](qualifiers.md)
 * [Annotations](annotations.md)

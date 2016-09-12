@@ -8,6 +8,7 @@
   * [Commands](docs/basics/commands.md)
   * [Extensions](docs/basics/extensions.md)
 * [Advanced Topics](docs/advanced/README.md)
+  * [Translation](translation.md)
   * [Placeholders and Arguments](docs/advanced/arguments.md)
   * [Annotations](docs/advanced/annotations.md)
   * [Qualifiers](docs/advanced/qualifiers.md)

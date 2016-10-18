@@ -126,7 +126,7 @@ looks something like this:
 ├── package.json
 ├── config.json
 └── src
-    └── extensions.jsx
+    └── index.jsx
 ```
 
 - `package.json` provides information about your package to `npm`. It defines
@@ -136,16 +136,19 @@ only used by Lacona, and it provides additional information about the addon.
 - `config.json` defines any settings to display in User Preferences.
   If you told `npm init` that you do not need user settings, this
   would only contain an empty object.
-- `src` contains the source files which you will be editing.
+- `src` contains the source files which you will be editing. This directory
+  will not be published to NPM (only the complied `lib` directory will)
   - `index.jsx` is the javascript code of your addon. It should export
     an Array of Phrases called `extensions`.
 
 Once you install your packages, two new directories will be automatically
 created. You won't need to worry about these, but just know that they exist.
 
-- `lib` contains the transpiled files. It should not be edited by hand.
+- `lib` contains the transpiled files. It should not be edited by hand. This
+  directory will not be included in your Git repository.
 - `node_modules` contains the dependencies required to run and develop your
-addon. You should not need to modify this manually.
+  addon. You should not need to modify this manually. This directory
+  will not be included in your Git repository.
 
 ### Installation
 

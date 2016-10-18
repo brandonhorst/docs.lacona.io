@@ -71,4 +71,53 @@ Opens a given URL (with a protocol) in the default handler.
 openFile({path: String}) -> Promise<void>
 ```
 
-Opens a given file in the default handler. Leading `~` will be expanded.
+### fetchClipboard
+
+```js
+fetchClipboard() -> Promise<{
+  files: Array<String>
+  urls: Array<String>
+  strings: Array<String>,
+  images: Array<{
+    name: String?,
+    data: String
+  }>,
+  text: String [[DEPRECATED]]
+}>
+```
+
+Returns an object representing the current clipboard, broken up by subject.
+Most of the time, only one of files|urls|images|strings will have any content.
+
+- `urls` is an array of URLS, including the scheme (e.g. `http://google.com`)
+- `files` is an array of Paths, not including a scheme (e.g. `/Applications/Lacona.app/`). Directories will always end in a `/`.
+- `strings` is an array of plain text strings.
+- `images` is an array of objects with base64-encoded image data, and possibly a name
+- `text` contains the "default" plain text contained in the clipboard - essentially whatever you would get if you pressed CMD+v in a text editor. It should not be used.
+
+### setClipboard
+
+```js
+fetchClipboard({
+  files: Array<String>
+  urls: Array<String>
+  strings: Array<String>,
+  images: Array<{
+    name: String?,
+    data: String
+  }>,
+  text: String [[DEPRECATED]]
+}) -> Promise<void>
+```
+
+Sets the current contents of the clipboard. Accepts an argument in the
+same format as `fetchClipboard`.
+
+Note that `setClipboard(await fetchClipboard())` does **not** leave the
+clipboard unchanged. Any advanced clipboard data (image metadata,
+audio data, annotated strings, url attributions, and much more) will
+be lost. Do not attempt to use these two functions to mutate the clipboard -
+only use it when you desire to completely overwrite the clipboard contents.
+
+Setting `text` is the same as setting `strings` to a single-item array, but this
+property is deprecated and should not be used.

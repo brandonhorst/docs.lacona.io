@@ -1,43 +1,66 @@
 # Getting Started
 
-Developing Lacona commands requires some very basic knowledge of the command
+So you're using Lacona to make your life better, but you want to develop
+an Addon or two to make it even more powerful. You've come to the right place!
+
+Developing Lacona Addons requires some very basic knowledge of the command
 line, and some knowledge of Javascript. If you have questions that are not
-cleared up by this guide, please submit an issue.
+cleared up by this guide, please
+[submit an issue](https://github.com/laconalabs/docs.lacona.io/issues).
+
+## The `lacona-cli` Tool
 
 There is a simple command line utility that will help kickstart your
-Lacona addon development. To use it, you'll need node.js v6.0.0+ and npm.
-You'll only have to do this once.
+Lacona addon development.
 
-If you don't already have node and npm installed.
+To use it, you'll need Node.js v4.0.0+ and npm. If you don't already
+have Node and npm installed, you can install it with
+[Homebrew](https://homebrew.sh). You'll only have to do this once.
 
 ```sh
 $ brew install node
 ```
 
-You could also use [nvm](https://github.com/creationix/nvm).
+You could download Node from [the website](https://nodejs.org) directly.
+
 Once `node` is installed, you can use `npm` to install the `lacona-cli` package.
 
 ```sh
 $ npm install -g lacona-cli
 ```
 
-Lacona addons must be open source. You'll probably want to store your code
-on [Github](https://github.com). Go to Github and create a new repo, then
-clone it to your local system.
+You'll probably want to store your Addon code in a public repository such as
+[Github](https://github.com). Before you continue, I recommend creating a new
+repo on Github and cloning it to computer.
 
 ```sh
 $ git clone <your new git repo url>
 $ cd <your new git repo name>
 ```
 
-If that all worked, you're ready to create your new Lacona addon!
+If that all worked, you're ready to create your new Lacona Addon! `lacona-cli`
+has a helper command called `init`. Run it like so:
 
 ```sh
 $ lacona init
 ```
 
 This will ask you a few questions and automatically generate
-the boilerplate of your project. The questions are explained below:
+the boilerplate of your project. The questions are explained below.
+
+- **Addon Title**: The human-readable title of your application. It should briefly
+describe what your Addon does or what services it interacts with.
+It should have proper capitalization and, in most cases, not use the word "Lacona".
+- **Package Name**: The name to use to upload the package to
+[npm](http://npmjs.com). It must follow
+[npm package name rules](https://docs.npmjs.com/files/package.json#name).
+Try to stick to lowercase characters, underscores, dashes, and dots.
+By convention, the package name should start with `lacona-`, though this is
+not enforced.
+- **Brief Description**: A sentence or two describing what the Addon does and
+why the user should use it.
+- **Examples**: A few (1-5) examples of a valid input for this Addon. This is
+designed to 
 
 ### Basic Information
 

@@ -1,10 +1,7 @@
 # Learning By Example
 
-Lacona Addons are written in pure Javascript. However, first-time authors may
-find the APIs somewhat complex. To understand why the API was built this way,
-please read the [Rationale](../advanced/rationale.md).
-
-For many people, the best way to learn is by looking at examples. Let's
+Lacona Addons are written in pure Javascript. For many people,
+the best way to learn is by looking at examples. Let's
 look through a Lacona Addon, `lacona-convert-currency`, and see how it
 was built.
 
@@ -28,9 +25,9 @@ Let's take a look at this file, item-by-item.
 - `dependencies`: npm modules that are required to run this addon. These are installed with `npm install` and `lacona install`, and are also automatically installed on end-user systems.
 - `babel`: Configuration object that tells `babel-cli` how to transpile this module. See [babel docs](https://babeljs.io/docs/usage/babelrc/) for more information.
 
-## `config.json`
+## `preferences.json`
 
-The file specified in `package.json::lacona.config` is a JSON file that defines a
+The file specified in `preferences.json` is a JSON file that defines a
 [confine](https://github.com/laconalabs/confine) schema. All configuration options
 will be presented to the user in the Preferences page, and the user's data will be
 exposed to our Command as a the `config` variable. More detailed information is
@@ -38,25 +35,19 @@ available [here](../advanced/config.md).
 
 ```json
 {
-  "currencyConversion": {
-    "type": "object",
-    "properties": {
-      "defaultCurrency": {
-        "type": "string",
-        "description": "This will be used if you do not specify a 'to' currency.",
-        "default": "USD",
-        "enum": [ "AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR" ]
-      }
-    }
-  } 
+  "defaultCurrency": {
+    "type": "string",
+    "description": "This will be used if you do not specify a 'to' currency.",
+    "default": "USD",
+    "enum": [ "AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR" ]
+  }
 }
 ```
 
-The top-level property designates that a new tab called `Currency Conversion`
-should be established for these preferences. It has a single preference -
+The preferences have a single preference -
 `defaultCurrency`, which is a string that has a set list of options and a description.
 It will be rendered to the user as a dropdown selector. The user's selection
-will be made available as `config.currencyConversion.defaultCurrency`.
+will be made available as `config.defaultCurrency`.
 
 Information about using the `config` variable is available below.
 
